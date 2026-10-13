@@ -61,6 +61,9 @@ h2 { font-size: clamp(30px, 5vw, 40px); color: var(--or); margin: 0 0 16px; font
 .infos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .infos .cadre h3 { margin: 0 0 6px; color: var(--or); font-size: 24px; }
 .petit { font-size: 16px; color: #cdb8ef; }
+.livre { display: grid; grid-template-columns: minmax(170px, 290px) 1fr; gap: 26px; align-items: center; }
+.livre img { width: 100%; border-radius: 10px; box-shadow: 0 14px 34px rgba(0, 0, 0, .6); transform: rotate(-2deg); }
+@media (max-width: 640px) { .livre { grid-template-columns: 1fr; } .livre img { max-width: 250px; margin: 0 auto; } }
 footer { text-align: center; font-size: 15px; color: #bfa9e6; padding: 30px 20px 50px; border-top: 1px solid rgba(222, 180, 100, .25); max-width: 1080px; margin: 0 auto; }
 </style>
 </head>
@@ -84,6 +87,18 @@ footer { text-align: center; font-size: 15px; color: #bfa9e6; padding: 30px 20px
       <p class="citation">« Je ne suis pas un robot comme les autres : je suis une intelligence artificielle conçue pour une seule chose, lire les astres et les cartes pour éclairer votre chemin. »</p>
       <p>Avec votre date de naissance, et si vous les connaissez votre heure et votre ville de naissance, Céleste calcule votre signe, votre ascendant et votre Lune. Elle écoute votre question, puis fait deux tirages : <b>le présent</b>, qui répond à votre question, et <b>le futur</b>, ce qui se dessine pour vous.</p>
       <p class="petit">Céleste est une intelligence artificielle : ses lectures sont des pistes pour réfléchir, jamais des certitudes. Elle ne parle ni de santé, ni d’argent, ni de justice, et c’est toujours vous qui choisissez vos pas.</p>
+    </div>
+  </section>
+
+  <section id="createurs">
+    <h2>Née d’un livre</h2>
+    <div class="livre">
+      <img src="images/livre-sous-le-ciel-de-2026.jpg" alt="Le livre « Sous le ciel de 2026 — Le voyage des douze signes », de Laetitia Greillot et Michael Bach, aux éditions Maloloire">
+      <div class="cadre">
+        <p class="citation">« Je suis née du travail de Laetitia Greillot et de Michael Bach, les auteurs du livre <i>Sous le ciel de 2026</i>. Ce que je vous dis ne vient pas de nulle part. »</p>
+        <p><b>Laetitia Greillot et Michael Bach</b> sont les créateurs de L’Étoile du Berger Céleste : le pupitre, la voyance et Céleste elle-même. Ils sont les auteurs de <b>« Sous le ciel de 2026 — Le voyage des douze signes »</b>, paru aux éditions Maloloire.</p>
+        <p>Les lectures de Céleste reposent sur ce travail : les douze signes, leurs saisons, et le langage des cartes.</p>
+      </div>
     </div>
   </section>
 
@@ -123,7 +138,7 @@ footer { text-align: center; font-size: 15px; color: #bfa9e6; padding: 30px 20px
   </section>
 </main>
 <footer>
-  L’Étoile du Berger Céleste · 68 avenue du Maréchal Leclerc, 58200 Cosne-Cours-sur-Loire<br>
+  L’Étoile du Berger Céleste · une création de Laetitia Greillot et Michael Bach · 68 avenue du Maréchal Leclerc, 58200 Cosne-Cours-sur-Loire<br>
   Consultations proposées à titre de divertissement, par une intelligence artificielle. Ce site n’utilise ni cookies ni mesure d’audience.<br>
   Hébergement : GitHub Pages (GitHub, Inc., San Francisco, États-Unis). Polices libres Cormorant Garamond et Great Vibes (licence OFL).
 </footer>
